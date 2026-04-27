@@ -1,0 +1,23 @@
+# Local terraform directory (contains providers and plugins)
+.terraform/
+
+# Terraform state files (we use S3 backend, so these shouldn't be local)
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+
+# Variables files (CRITICAL: This keeps your passwords out of GitHub)
+*.tfvars
+*.tfvars.json
+
+# Local variable override files
+override.tf
+override.tf.json
+_override.tf
+_override.tf.json
+
+# CLI configuration files
+.terraformrc
+terraform.rc
